@@ -1,0 +1,2 @@
+module SpikePagesHelper
+end

@@ -1,0 +1,17 @@
+<%= form_for(@spike_page) do |f| %>
+  <% if @spike_page.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@spike_page.errors.count, "error") %> prohibited this spike_page from being saved:</h2>
+
+      <ul>
+      <% @spike_page.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
